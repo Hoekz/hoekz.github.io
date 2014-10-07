@@ -2,7 +2,7 @@ var app = angular.module('app',['ngRoute']);
 
 app.config(['$routeProvider', function($routeProvider){
     $routeProvider
-        .when('/',{
+        .when('/home',{
             templateUrl: 'html/home.html',
             controller: 'home'
         })
@@ -18,5 +18,5 @@ app.config(['$routeProvider', function($routeProvider){
             templateUrl: 'html/project.html',
             controller: 'project'
         })
-        .otherwise({redirectTo: '/'});
+        .otherwise({redirectTo: '/home'});
 }]);
