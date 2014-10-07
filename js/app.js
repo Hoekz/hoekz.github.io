@@ -1,22 +1,23 @@
 var app = angular.module('app',['ngRoute']);
 
-app.config(['$routeProvider', function($routeProvider){
+app.config(['$routeProvider', '$locationProvider', function($routeProvider, loc){
     $routeProvider
-        .when('/home',{
-            templateUrl: 'html/home.html',
+        .when('/',{
+            templateUrl: '/website/jhoekz/html/home.html',
             controller: 'home'
         })
         .when('/about',{
-            templateUrl: 'html/about.html',
+            templateUrl: '/html/about.html',
             controller: 'about'
         })
         .when('/projects',{
-            templateUrl: 'html/projects.html',
+            templateUrl: '/html/projects.html',
             controller: 'projects'
         })
         .when('/projects/:project',{
-            templateUrl: 'html/project.html',
+            templateUrl: '/html/project.html',
             controller: 'project'
         })
-        .otherwise({redirectTo: '/home'});
+        .otherwise({redirectTo: '/'});
+    loc.html5Mode(true);
 }]);
