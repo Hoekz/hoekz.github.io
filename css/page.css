@@ -3,38 +3,57 @@
     top: 0;
     position: fixed;
     z-index: 9999;
-    height: 40px;
+    height: 40pt;
     width: 100%;
     background: #ffffff;
-    box-shadow: 0 3px 12px 0 #282828;
-    padding-left: 70px;
+    box-shadow: 0 3pt 12pt 0 #282828;
+    padding-left: 70pt;
 }
 
-.navbar div{
+.option{
     box-sizing: border-box;
-    height: 40px;
-    width: 90px;
-    font-size: 16px;
-    font-weight: normal;
+    height: 40pt;
+    width: 90pt;
+    font-size: 16pt;
+    font-weight: lighter;
     text-align: center;
     margin-top: 0;
-    padding-top: 12px;
+    padding-top: 12pt;
     color: #363f4d;
     float: left;
 }
 
-.navbar div:hover{background: #f2f2f2;}
+.option:hover{background: #f2f2f2;}
+
+.bold{font-weight: bold;}
 
 .placeholder{
-    font-size: 80px;
-    padding: 10px;
-    border-radius: 10px;
+    font-size: 80pt;
+    padding: 10pt;
+    border-radius: 10pt;
     border: 1px solid white;
     color: white;
     text-align: center;
     margin: 10%;
-    text-shadow: 1px 1px 4px #333;
+    text-shadow: 1pt 1pt 4pt #333;
 }
+
+.center{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 720px;
+    text-align: center;
+}
+
+.left{
+    text-align: left;
+    margin: 10pt;
+}
+
+.title{font-size: 32pt}
+.subtitle{font-size: 16pt;}
 
 body{
     height: 100%;
@@ -42,4 +61,29 @@ body{
     background: #4d6b99;
     overflow: hidden;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.view{
+    position:absolute;
+    top:50pt;
+    left:70pt;
+    right:70pt;
+    bottom:0;
+    color: white;
+}
+.view.ng-enter, .view.ng-leave {
+    -webkit-transition:all .5s linear;
+    transition:all .5s linear;
+}
+.view.ng-enter {opacity: 0;}
+.view.ng-enter.ng-enter-active {opacity: 100;}
+.view.ng-leave.ng-leave-active {opacity: 0;}
+
+img{
+    border: 1pt solid #c3c3c3;
+    padding: 3pt;
+    margin: 10pt;
+    border-radius: 10pt;
+    background: white;
+    box-shadow: 2pt 2pt 6pt 0 rgba(0, 0, 0, .5);
 }
