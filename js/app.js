@@ -3,7 +3,7 @@ var app = angular.module('app',['ngRoute']);
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, loc){
     $routeProvider
         .when('/',{
-            templateUrl: '/website/jhoekz/html/home.html',
+            templateUrl: '/jhoekz/html/home.html',
             controller: 'home'
         })
         .when('/about',{
