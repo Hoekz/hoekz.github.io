@@ -1,0 +1,11 @@
+{
+    "title": "About",
+    "sections": [
+        {
+            "title": "Bio",
+            "subtitle": "My Life AFK",
+            "image": "img/family.png",
+            "content": "text/bio.txt"
+        }
+    ]
+}

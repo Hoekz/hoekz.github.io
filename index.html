@@ -3,12 +3,14 @@
 <head>
     <title>James Hoekzema</title>
     <link href="css/page.css" rel="stylesheet">
+    <link href="img/j.ico" rel="shortcut icon">
 </head>
 <body ng-app="app">
 <div class="navbar" ng-controller="navbar">
     <div ng-repeat="opt in menu">
         <a ng-click="link(opt.link)"><div class="option" ng-class="{bold: opt.link == loc}">{{opt.name}}</div></a>
     </div>
+    <div class="center"><img src="img/logo.png"></div>
 </div>
 <ng-view class="view"></ng-view>
 <script src="js/angular.min.js"></script>
@@ -18,5 +20,8 @@
 <script src="js/fetch.js"></script>
 <script src="js/navbar.js"></script>
 <script src="js/home.js"></script>
+<script src="js/about.js"></script>
+<script src="js/projects.js"></script>
+<script src="js/project.js"></script>
 </body>
 </html>

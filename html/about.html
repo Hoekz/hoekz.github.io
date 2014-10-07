@@ -1,1 +1,8 @@
-<div class="placeholder">About Page - Coming Soon</div>
+<div class="center"><div class="title left">{{about.title}}</div>
+    <div class="center" ng-repeat="section in about.sections">
+        <div class="left subtitle">{{section.title}} - {{section.subtitle}}</div>
+        <img src="{{section.image}}">
+        <div class="left paragraph" ng-repeat="p in section.content">{{p}}</div>
+        <hr>
+    </div>
+</div>
