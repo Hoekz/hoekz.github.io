@@ -43,7 +43,7 @@
     left: 0;
     right: 0;
     margin: auto;
-    width: 720px;
+    max-width: 720px;
     text-align: center;
     background: transparent;
 }
@@ -68,9 +68,11 @@ body{
 .view{
     position:absolute;
     top:50pt;
-    left:70pt;
-    right:70pt;
-    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
+    max-width: 900px;
+    bottom:10pt;
     color: white;
     overflow: auto;
 }
@@ -82,7 +84,7 @@ body{
 .view.ng-enter.ng-enter-active {opacity: 100;}
 .view.ng-leave.ng-leave-active {opacity: 0;}
 
-img{
+.view img{
     border: 1pt solid #c3c3c3;
     padding: 3pt;
     margin: 10pt;
@@ -96,7 +98,8 @@ img{
 }
 
 ::-webkit-scrollbar-track{
-    background: transparent;
+    background: #384b71;
+    border-radius: 12px;
 }
 
 ::-webkit-scrollbar-thumb{

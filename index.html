@@ -10,7 +10,7 @@
     <div ng-repeat="opt in menu">
         <a ng-click="link(opt.link)"><div class="option" ng-class="{bold: opt.link == loc}">{{opt.name}}</div></a>
     </div>
-    <div class="center"><img src="img/logo.png"></div>
+    <img src="img/logo.png" style="float: right; margin-right: 10pt">
 </div>
 <ng-view class="view"></ng-view>
 <script src="js/angular.min.js"></script>
