@@ -23,24 +23,12 @@
     -webkit-transition: all .25s linear;
 }
 .option:hover{background: #4d6b99; color: white}
-.bold{
-    font-weight: bold;
+.choice{
     background: #4d6b99;
     color: white;
     border-radius: 10pt 10pt 0 0;
     margin-top: 7pt;
     height: 33pt;
-}
-
-.placeholder{
-    font-size: 80pt;
-    padding: 10pt;
-    border-radius: 10pt;
-    border: 1px solid white;
-    color: white;
-    text-align: center;
-    margin: 10%;
-    text-shadow: 1pt 1pt 4pt #333;
 }
 
 .center{
@@ -56,6 +44,13 @@
 .left{
     text-align: left;
     margin: 10pt;
+}
+.mid{
+    text-align: center;
+    margin: 5pt;
+}
+.fill{
+    width: 100%;
 }
 
 .title{font-size: 32pt}
@@ -96,6 +91,35 @@ body{
     box-shadow: 2pt 2pt 6pt 0 rgba(0, 0, 0, .5);
 }
 
+.tile{
+    float: left;
+    box-sizing: border-box;
+    padding: 5pt;
+    text-align: center;
+    color: black;
+    height: 220px;
+    width: 220px;
+    margin: 10px;
+    background: white;
+    box-shadow: 3pt 3pt 6pt 0 rgba(0, 0, 0, .6);
+}
+.tile img{
+    height: 100px;
+    width: 100px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+}
+
+.view.ng-enter {opacity: 0;}
+.view.ng-enter.ng-enter-active {opacity: 100;}
+.view.ng-leave.ng-leave-active {opacity: 0;}
+
+
+a{
+    text-decoration: none;
+}
 ::-webkit-scrollbar{
     width: 0;
 }

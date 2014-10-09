@@ -8,7 +8,7 @@
 <body ng-app="app">
 <div class="navbar" ng-controller="navbar">
     <div ng-repeat="opt in menu">
-        <a ng-click="link(opt.link)"><div class="option" ng-class="{bold: opt.link == loc}">{{opt.name}}</div></a>
+        <a ng-click="link(opt.link)"><div class="option" ng-class="{choice: opt.link == loc}">{{opt.name}}</div></a>
     </div>
     <img src="img/logo.png" style="float: right; margin-right: 20pt; margin-top: 5pt" height="40px" width="320px">
 </div>

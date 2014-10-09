@@ -14,7 +14,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, loc)
             templateUrl: 'html/projects.html',
             controller: 'projects'
         })
-        .when('/projects/:project',{
+        .when('/project/:project',{
             templateUrl: 'html/project.html',
             controller: 'project'
         })

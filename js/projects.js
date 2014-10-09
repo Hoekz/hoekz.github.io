@@ -1,9 +1,13 @@
-app.controller('projects', ['$scope', '$fetch', function($scope, $fetch){
+app.controller('projects', ['$scope', '$fetch', '$location', function($scope, $fetch, $location){
     $scope.projects = $fetch.getProjects();
 
     if(!$scope.projects){
-        $scope.$on('home', function(){
+        $scope.$on('projects', function(){
             $scope.projects = $fetch.projects;
         });
     }
+
+    $scope.link = function(link){
+        $location.path(link);
+    };
 }]);

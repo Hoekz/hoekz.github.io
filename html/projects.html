@@ -1,1 +1,13 @@
-<div class="placeholder">Projects Page - Coming Soon</div>
+<div class="center">
+    <div class="left title">Projects</div>
+    <div class="subtitle"><i>Web, Javascript, Python, C++</i></div>
+    <div class="left fill">
+        <a class="tile" ng-repeat="project in projects" ng-click="link(project.link)">
+            <div class="fill mid">
+                <div><b>{{project.title}}</b></div>
+                <img src="{{project.image}}">
+                <div><i>{{project.tease}}</i></div>
+            </div>
+        </a>
+    </div>
+</div>
