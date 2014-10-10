@@ -5,7 +5,7 @@
     z-index: 9999;
     height: 40pt;
     width: 100%;
-    background: #ffffff;
+    background: #195D7F;
     padding: 0;
 }
 
@@ -18,14 +18,14 @@
     text-align: center;
     margin-top: 0;
     padding-top: 12pt;
-    color: #363f4d;
+    color: #FFF;
     float: left;
     -webkit-transition: all .25s linear;
 }
-.option:hover{background: #4d6b99; color: white}
+.option:hover{background: #FFF; color: #195D7F}
 .choice{
-    background: #4d6b99;
-    color: white;
+    background: #FFF;
+    color: #195D7F;
     border-radius: 10pt 10pt 0 0;
     margin-top: 7pt;
     height: 33.5pt;
@@ -64,7 +64,7 @@ body{
     width: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
-    background: #4d6b99;
+    background: #FFF;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
@@ -72,7 +72,7 @@ body{
     left:0;
     right:0;
     margin: auto;
-    color: white;
+    color: #195D7F;
 }
 .view.ng-enter, .view.ng-leave {
     -webkit-transition:all .5s linear;
@@ -92,16 +92,18 @@ body{
 }
 
 .tile{
+    border: 1pt solid #c3c3c3;
+    padding: 3pt;
+    margin: 10px;
+    border-radius: 10pt;
+    background: white;
+    box-shadow: 2pt 2pt 6pt 0 rgba(0, 0, 0, .5);
     float: left;
     box-sizing: border-box;
-    padding: 5pt;
     text-align: center;
     color: black;
     height: 220px;
     width: 220px;
-    margin: 10px;
-    background: white;
-    box-shadow: 3pt 3pt 6pt 0 rgba(0, 0, 0, .6);
 }
 .tile img{
     height: 100px;
