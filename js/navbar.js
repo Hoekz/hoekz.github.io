@@ -12,5 +12,12 @@ app.controller('navbar',['$scope', '$location', function($scope, $location){
         $location.path(link);
     };
 
+    var page = localStorage.getItem('redirect');
+
+    if(page){
+        $location.path(page);
+        localStorage.removeItem('redirect');
+    }
+
     $scope.loc = $location.path();
 }]);

@@ -2,11 +2,15 @@
 <html>
 <head>
     <title>404 Redirect</title>
-    <meta http-equiv="refresh" content="0; url=http://jhoekz.me" />
 </head>
 <body>
 <a href="http://jhoekz.me">If the page doesn't refresh, click here.</a>
 <script>
+    var page = window.location.href.substr(16);
+    if(page == "/about" || page.substr(0, 8) == "/project")
+        localStorage.setItem('redirect', page);
+    else
+        localStorage.removeItem('redirect');
     window.location.href = "http://jhoekz.me";
 </script>
 </body>
