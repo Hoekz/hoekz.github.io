@@ -15,7 +15,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, loc)
             controller: 'projects'
         })
         .when('/project/:project',{
-            templateUrl: 'html/project.html',
+            templateUrl: '/html/project.html',
             controller: 'project'
         })
         .otherwise({redirectTo: '/'});
