@@ -2,8 +2,16 @@
 <html>
 <head>
     <title>404 Redirect</title>
+    <link href="css/page.css" rel="stylesheet">
+    <link href="img/j.ico" rel="shortcut icon">
 </head>
 <body>
+<div class="navbar" ng-controller="navbar">
+    <div><a><div class="option">Home</div></a></div>
+    <div><a><div class="option">About</div></a></div>
+    <div><a><div class="option">Projects</div></a></div>
+    <img src="img/logo.png" style="float: right; margin-right: 20pt; margin-top: 5pt" height="40px" width="320px">
+</div>
 <a href="http://jhoekz.me">If the page doesn't refresh, click here.</a>
 <script>
     var page = window.location.href.substr(16);
