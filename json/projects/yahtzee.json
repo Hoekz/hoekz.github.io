@@ -1,0 +1,5 @@
+{
+    "name" : "Yahtzee",
+    "description" : "Yahtzee game written in Python (under 100 lines)",
+    "files" : ["/text/python/yahtzee.py"]
+}

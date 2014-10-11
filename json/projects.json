@@ -4,5 +4,11 @@
         "image" : "img/python.jpg",
         "tease" : "A table class written in Python",
         "link"  : "/project/python-table"
+    },
+    {
+        "title" : "Yahtzee",
+        "image" : "img/python.jpg",
+        "tease" : "Yahtzee game written in Python",
+        "link"  : "/project/yahtzee"
     }
 ]
