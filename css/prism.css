@@ -33,11 +33,11 @@ pre[class*="language-"] {
 pre[class*="language-"] {
 	position: relative;
 	background-color: #fdfdfd;
-	background-image: -webkit-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.08) 50%);
-	background-image: -moz-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.08) 50%);
-	background-image: -ms-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.08) 50%);
-	background-image: -o-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.08) 50%);
-	background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.08) 50%);
+	background-image: -webkit-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.16) 50%);
+	background-image: -moz-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.16) 50%);
+	background-image: -ms-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.16) 50%);
+	background-image: -o-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.16) 50%);
+	background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.16) 50%);
 	background-size: 3em 3em;
 	background-origin: content-box;
 	overflow: visible;
