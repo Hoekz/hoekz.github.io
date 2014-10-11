@@ -6,6 +6,12 @@
         "link"  : "/project/python-table"
     },
     {
+        "title" : "Project Page",
+        "image" : "img/web.png",
+        "tease" : "This page's source code",
+        "link"  : "/project/page-source"
+    },
+    {
         "title" : "Yahtzee",
         "image" : "img/python.jpg",
         "tease" : "Yahtzee game written in Python",

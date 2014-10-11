@@ -1,0 +1,5 @@
+{
+    "name" : "Page Source",
+    "description" : "The source code of this website...at least this sub-page.",
+    "files" : ["/html/project.html","/css/page.css","/js/app.js","/js/project.js", "/css/prism.css"]
+}
