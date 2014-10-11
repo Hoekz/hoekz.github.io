@@ -16,5 +16,11 @@
         "image" : "img/python.jpg",
         "tease" : "Yahtzee game written in Python",
         "link"  : "/project/yahtzee"
+    },
+    {
+        "title" : "Canvas 3D",
+        "image" : "img/web.png",
+        "tease" : "A 3D Javascript Library for Canvas 2D",
+        "link"  : "/project/canvas-3d"
     }
 ]
