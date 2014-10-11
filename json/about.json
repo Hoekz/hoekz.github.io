@@ -1,11 +1,23 @@
 {
     "title": "About",
-    "sections": [
-        {
-            "title": "Bio",
-            "subtitle": "My Life AFK",
-            "image": "img/family.png",
-            "content": "text/bio.txt"
+    "social": {
+        "title": "Social Accounts",
+        "accounts": [
+            {"icon": "img/icons/linkedin.png", "link": "http://linkedin.com/in/jhoekzema"}
+        ]
+    },
+    "resume": {
+        "title": "James Hoekzema - Computer Scientist",
+        "sections":{
+            "Education" : "text/resume/edu.txt",
+            "Languages" : "text/resume/lang.txt",
+            "Experience" : "text/resume/exp.txt"
         }
-    ]
+    },
+    "bio": {
+        "title": "Bio",
+        "subtitle": "My Life AFK",
+        "image": "img/family.png",
+        "content": "text/bio.txt"
+    }
 }

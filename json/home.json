@@ -1,5 +1,6 @@
 {
-    "title": "Home",
-    "subTitle": "Welcome to the website of James Hoekzema",
-    "mainImage": "img/home.jpg"
+    "title": "James Hoekzema - Home",
+    "subTitle": "Welcome to my Website!",
+    "mainImage": "img/home.jpg",
+    "text": "Welcome!  Feel free to explore my About page which contains links to my social accounts, my resume, and my bio.  Also check out my Projects page where I post code, math, and simulators.  Enjoy!"
 }
