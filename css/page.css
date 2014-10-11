@@ -153,7 +153,6 @@ iframe{
     color: white;
     box-sizing: border-box;
     padding: 6px;
-    max-height: 600px;
     border-radius: 12px;
 }
 #code div{
