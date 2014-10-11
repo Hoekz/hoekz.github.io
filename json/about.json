@@ -3,7 +3,9 @@
     "social": {
         "title": "Social Accounts",
         "accounts": [
-            {"icon": "img/icons/linkedin.png", "link": "http://linkedin.com/in/jhoekzema"}
+            {"icon": "img/icons/linkedin.png", "link": "http://linkedin.com/in/jhoekzema"},
+            {"icon": "img/icons/facebook.png", "link": "http://www.facebook.com/james.hoekzema"},
+            {"icon": "img/icons/freelancer.png", "link": "http://www.freelancer.com/u/JamesHoekz.html"}
         ]
     },
     "resume": {
