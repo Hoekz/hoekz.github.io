@@ -221,10 +221,8 @@ function data(){
     c.pts2D = [];
     c.canvas.width = document.documentElement.clientWidth;
     c.canvas.height = document.documentElement.clientHeight;
-    var color = new rgb(255, 0, 0);
-    //c.makeEquation(getFunction(), -5, -5, 5, 5, .25, color);
-    c.makeSphere(new point(0,0,0), 2, color);
-    c.makeCube(new point(5,0,0), 2, color);
+    var color = new rgb(0, 0, 255);
+    c.makeEquation(getFunction(), -5, -5, 5, 5, .25, color);
 };
 data();
 c.cam.z = 40;
