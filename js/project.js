@@ -12,6 +12,7 @@ app.controller('project', ['$scope', '$fetch', '$routeParams', function($scope, 
         $scope.viewFile.code = $fetch.file;
         $scope.viewFile.type = $scope.project.files[$scope.viewFile.index].split('.').pop();
         if($scope.viewFile.type == 'js') $scope.viewFile.type = 'javascript';
+        if($scope.viewFile.type == 'py') $scope.viewFile.type = 'python';
         setTimeout(Prism.highlightAll, 50);
     });
 
