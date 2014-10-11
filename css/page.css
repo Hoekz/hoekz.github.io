@@ -95,7 +95,7 @@ body{
     box-shadow: 2pt 2pt 6pt 0 rgba(0, 0, 0, .5);
 }
 
-.icon img{
+img.icon {
     border: none;
     padding: 0;
     margin: 3pt;

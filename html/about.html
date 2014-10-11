@@ -1,10 +1,9 @@
 <div class="center"><div class="title left">{{about.title}}</div>
-    <div class="center">
+    <div class="mid fill">
         <div class="left subtitle">{{about.social.title}}</div>
         <a ng-repeat="acc in about.social.accounts" href="{{acc.link}}"><img src="{{acc.icon}}" class="icon"></a>
-    </div>
-    <div class="fill"><hr><br></div>
-    <div class="center">
+    </div><hr><br>
+    <div class="mid fill">
         <div class="left subtitle">{{about.bio.title}} - {{about.bio.subtitle}}</div>
         <img src="{{about.bio.image}}">
         <div class="left paragraph" ng-repeat="p in about.bio.content">{{p}}</div>
