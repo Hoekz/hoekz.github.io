@@ -51,7 +51,7 @@ app.factory('$fetch', ['$http', '$rootScope', function($http, $root){
         if(self.project[name]){
             return self.project[name];
         }else{
-            $http.get('json/projects/' + name + '.json').success(function(data){
+            $http.get('/json/projects/' + name + '.json').success(function(data){
                 self.project[name] = data;
                 $root.$broadcast('project');
             });
