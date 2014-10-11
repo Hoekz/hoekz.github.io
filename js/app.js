@@ -15,9 +15,25 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, loc)
             controller: 'projects'
         })
         .when('/project/:project',{
-            templateUrl: '/html/project.html',
+            templateUrl: 'html/project.html',
             controller: 'project'
         })
         .otherwise({redirectTo: '/'});
     loc.html5Mode(true);
 }]);
+
+var scrollSpeed = 0;
+var scroll = 0;
+document.addEventListener('keydown', function(e){
+    if(e.keyCode == 40) scrollSpeed = 25;
+    if(e.keyCode == 38) scrollSpeed = -25;
+    return false;
+});
+
+setInterval(function(){
+    scroll += scrollSpeed;
+    window.scrollTo(0, scroll);
+    scroll = window.scrollY;
+    scrollSpeed *= .8;
+    if(Math.abs(scrollSpeed) < .005) scrollSpeed = 0;
+}, 20);

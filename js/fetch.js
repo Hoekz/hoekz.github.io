@@ -1,5 +1,6 @@
 app.factory('$fetch', ['$http', '$rootScope', function($http, $root){
     var self = this;
+    self.project = {};
 
     self.getHome = function(){
         if(self.home){
@@ -44,6 +45,25 @@ app.factory('$fetch', ['$http', '$rootScope', function($http, $root){
             });
             return false;
         }
+    };
+
+    self.getProject = function(name){
+        if(self.project[name]){
+            return self.project[name];
+        }else{
+            $http.get('json/projects/' + name + '.json').success(function(data){
+                self.project[name] = data;
+                $root.$broadcast('project');
+            });
+            return false;
+        }
+    };
+
+    self.getFile = function(file){
+        $http.get(file).success(function(data){
+            self.file = data;
+            $root.$broadcast('file');
+        });
     };
 
     return self;

@@ -2,12 +2,13 @@
 <html>
 <head>
     <title>James Hoekzema</title>
+    <link href="css/prism.css" rel="stylesheet">
     <link href="css/page.css" rel="stylesheet">
     <link href="img/j.ico" rel="shortcut icon">
 </head>
 <body ng-app="app">
 <div class="navbar" ng-controller="navbar">
-    <div ng-repeat="opt in menu">
+    <div ng-repeat="opt in menu" ng-show="menu">
         <a ng-click="link(opt.link)"><div class="option" ng-class="{choice: opt.link == loc}">{{opt.name}}</div></a>
     </div>
     <img src="img/logo.png" style="float: right; margin-right: 20pt; margin-top: 5pt" height="40px" width="320px">
@@ -16,6 +17,7 @@
 <script src="js/angular.min.js"></script>
 <script src="js/angular.route.min.js"></script>
 <script src="js/angular-animate.min.js"></script>
+<script src="js/prism.js"></script>
 <script src="js/app.js"></script>
 <script src="js/fetch.js"></script>
 <script src="js/navbar.js"></script>

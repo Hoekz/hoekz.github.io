@@ -53,6 +53,11 @@
     width: 100%;
 }
 
+.txt{
+    color: #195D7F;
+    margin: 10pt;
+}
+
 .title{font-size: 32pt}
 .subtitle{font-size: 18pt;}
 .paragraph{font-size: 12pt; text-indent: 32pt}
@@ -62,8 +67,7 @@ body{
     top: 40pt;
     bottom: 0;
     width: 100%;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow: hidden;
     background: #FFF;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
@@ -112,6 +116,47 @@ body{
     border-radius: 0;
     box-shadow: none;
     background: transparent;
+}
+
+iframe{
+    background: white;
+    padding: 3px;
+    border-radius: 10px;
+    border: 1px solid #c3c3c3;
+}
+
+.file-tab{
+    float: left;
+    background: #195D7F;
+    color: white;
+    width: 60px;
+    height: 24px;
+    padding-top: 6px;
+}
+.file-tab.first{
+    border-radius: 12px 0 0 12px;
+}
+.file-tab.last{
+      border-radius: 0 12px 12px 0;
+  }
+.file-tab.first.last{
+    border-radius: 12px;
+}
+.file-tab.selected{
+    background: #5896a8;
+}
+
+#code{
+    -webkit-transition: all 1s linear;
+    border: 1px solid #195D7F;
+    background: #195D7F;
+    color: white;
+    box-sizing: border-box;
+    padding: 6px;
+    border-radius: 12px;
+}
+#code div{
+    margin-bottom: 6px;
 }
 
 .view.ng-enter {opacity: 0;}

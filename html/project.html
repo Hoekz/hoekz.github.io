@@ -1,5 +1,20 @@
 <div class="center">
-    <div class="left title">Project</div>
-    <div class="subtitle"><i>Yay!</i></div>
-    <h6><i>It's a penguin...what'd you expect?</i></h6>
+    <div class="left title">{{project.name}}</div>
+    <div><i>{{project.description}}</i></div>
+    <iframe width="700px"
+            height="400px"
+            src="{{project.src}}"
+            ng-show="project.src"></iframe>
+    <div class="fill" style="margin-top: 10px; margin-bottom: 10px; height: 30px;">
+        <div ng-repeat="file in project.files">
+            <div class="file-tab"
+                 ng-class="{first: $first, last: $last, selected: $index == viewFile.index}"
+                 ng-click="show($index)">{{file.split('/').pop()}}</div>
+            </div>
+    </div>
+    <div class="fill">
+        <div id="code"><div>{{project.files[viewFile.index].split('/').pop()}}</div>
+            <pre class="line-numbers"><code class="language-{{viewFile.type}}" ng-bind="viewFile.code"></code></pre>
+        </div>
+    </div>
 </div>
