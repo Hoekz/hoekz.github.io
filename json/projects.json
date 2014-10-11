@@ -22,5 +22,11 @@
         "image" : "img/web.png",
         "tease" : "A 3D Javascript Library for Canvas",
         "link"  : "/project/canvas-3d"
+    },
+    {
+        "title" : "Golden Ratio",
+        "image" : "img/math.png",
+        "tease" : "An interesting fact",
+        "link"  : "/project/golden-ratio"
     }
 ]

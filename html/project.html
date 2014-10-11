@@ -5,14 +5,14 @@
             height="400px"
             src="{{project.src}}"
             ng-show="project.src"></iframe>
-    <div class="fill" style="margin-top: 10px; margin-bottom: 10px; height: 30px;">
+    <div class="fill" style="margin-top: 10px; margin-bottom: 10px; height: 30px;" ng-show="project.files.length">
         <div ng-repeat="file in project.files">
             <div class="file-tab"
                  ng-class="{first: $first, last: $last, selected: $index == viewFile.index}"
                  ng-click="show($index)">{{file.split('/').pop()}}</div>
             </div>
     </div>
-    <div class="fill">
+    <div class="fill" ng-show="project.files.length">
         <div id="code"><div>{{project.files[viewFile.index].split('/').pop()}}</div>
             <pre class="line-numbers"><code class="language-{{viewFile.type}}" ng-bind="viewFile.code"></code></pre>
         </div>
