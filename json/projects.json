@@ -20,7 +20,7 @@
     {
         "title" : "Canvas 3D",
         "image" : "img/web.png",
-        "tease" : "A 3D Javascript Library for Canvas 2D",
+        "tease" : "A 3D Javascript Library for Canvas",
         "link"  : "/project/canvas-3d"
     }
 ]
