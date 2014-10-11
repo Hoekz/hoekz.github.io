@@ -1,3 +1,10 @@
+var sin = Math.sin;
+var cos = Math.cos;
+var tan = Math.tan;
+var abs = Math.abs;
+var sqrt = Math.sqrt;
+var pow = Math.pow;
+
 var c = document.getElementById("canvas").getContext("2d");
 
 c.cam = {
@@ -215,15 +222,35 @@ c.makeSphere = function(p, r, color){
         }
     }
 };
-function data(){
+
+function reset(){
     c.pts = [];
     c.triangles = [];
     c.pts2D = [];
     c.canvas.width = document.documentElement.clientWidth;
     c.canvas.height = document.documentElement.clientHeight;
+}
+
+function data(){
+    reset();
     var color = new rgb(0, 0, 255);
     c.makeEquation(getFunction(), -5, -5, 5, 5, .25, color);
-};
+}
+function cube(){
+    reset();
+    var color = new rgb(255, 0, 0);
+    c.makeCube(new point(0, 0, 0), 4, color);
+}
+function sphere(){
+    reset();
+    var color = new rgb(0, 255, 255);
+    c.makeSphere(new point(.5, 0, -.5), 4, color);
+}
+function cylinder(){
+    reset();
+    color = new rgb(0, 255, 0);
+    c.makeCylinder(new point(0, 0, 0), 3, 5, color);
+}
 data();
 c.cam.z = 40;
 c.cam.rot.z = Math.PI / 2;
@@ -237,12 +264,12 @@ var x = function(){
         x: Math.cos(c.cam.rot.x),
         y: Math.cos(c.cam.rot.y),
         z: Math.cos(c.cam.rot.z)
-    }
+    };
     c.sin = {
         x: Math.sin(c.cam.rot.x),
         y: Math.sin(c.cam.rot.y),
         z: Math.sin(c.cam.rot.z)
-    }
+    };
     for(var i = 0; i < c.pts.length; i++){
         c.oriented.push(c.orient(c.pts[i]));
         c.pts2D.push(c.to2D(c.oriented[i]));
