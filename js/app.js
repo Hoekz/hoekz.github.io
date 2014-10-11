@@ -31,6 +31,7 @@ document.addEventListener('keydown', function(e){
 });
 
 setInterval(function(){
+    scroll = window.scrollY;
     scroll += scrollSpeed;
     window.scrollTo(0, scroll);
     scroll = window.scrollY;
