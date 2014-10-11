@@ -1,0 +1,6 @@
+{
+    "name" : "Canvas 3D",
+    "description" : "A 3D Javascript Library for Canvas 2D...more about figuring out the math than real world applications.",
+    "src" : "/text/3D/main.html",
+    "files" : ["/text/3D/Canvas3D.js","/text/3D/main.html"]
+}
