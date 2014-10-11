@@ -1,7 +1,7 @@
 [
     {
         "title" : "Python Table",
-        "image" : "img/python.png",
+        "image" : "img/python.jpg",
         "tease" : "A table class written in Python",
         "link"  : "/project/python-table"
     }
