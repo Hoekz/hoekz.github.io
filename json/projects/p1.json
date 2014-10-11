@@ -1,6 +1,6 @@
 {
-    "name" : "This Project!",
-    "description" : "My website...inside my website!",
-    "src" : "index.html",
-    "files" : ["/js/app.js", "/js/about.js", "/css/page.css"]
+    "name" : "Test Project",
+    "description" : "Small description about project.",
+    "src" : "html/home.html",
+    "files" : ["js/app.js", "js/about.js", "css/page.css"]
 }
