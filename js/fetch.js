@@ -22,7 +22,6 @@ app.factory('$fetch', ['$http', '$rootScope', function($http, $root){
                 self.about = data;
                 $http.get(self.about.bio.content).success(function(data){
                     self.about.bio.content = data;
-                    console.log(data);
                     $root.$broadcast('about');
                 });
             });
