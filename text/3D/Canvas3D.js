@@ -234,7 +234,7 @@ function reset(){
 function data(){
     reset();
     var color = new rgb(0, 0, 255);
-    c.makeEquation(getFunction(), -5, -5, 5, 5, .25, color);
+    c.makeEquation(getFunction(), -5, -5, 5, 5, .5, color);
 }
 function cube(){
     reset();
@@ -249,11 +249,12 @@ function sphere(){
 function cylinder(){
     reset();
     color = new rgb(0, 255, 0);
-    c.makeCylinder(new point(0, 0, 0), 3, 5, color);
+    c.makeCylinder(new point(0, 0, 0), 3, 10, color);
 }
 data();
 c.cam.z = 40;
-c.cam.rot.z = Math.PI / 2;
+c.cam.rot.z = Math.PI / 4;
+c.cam.rot.x = - Math.PI / 6;
 
 var x = function(){
     c.frame = (c.hasOwnProperty('frame')) ? c.frame + 1 : 0;
@@ -300,5 +301,12 @@ c.canvas.onmousemove = function(e){
     }
     x();
 };
+
+setInterval(function(){
+    if(!c.down){
+        c.cam.rot.z += .05;
+        x();
+    }
+}, 50);
 
 document.getElementById("eq").addEventListener("change", data);
