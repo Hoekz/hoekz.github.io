@@ -221,6 +221,7 @@ a{
 .accordion p {
     color:#333;
     margin:5px;
+    white-space: pre-wrap;
 }
 
 ul li {
@@ -233,6 +234,4 @@ ul li .content {
     height:0px;
     border-top:0;
 }
-[type=radio]:checked ~ label ~ .content{
-    height:350px;
-}
+[type=radio]:checked ~ label ~ .content{height:350px;}
