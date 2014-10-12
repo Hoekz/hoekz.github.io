@@ -54,7 +54,8 @@ function graph(x, y){
         context.strokeStyle = (Math.abs(slope - s) < .1) ? "cyan" : context.strokeStyle;
         total += (Math.abs(slope - s) < .1) ? 1 : 0;
         context.moveTo((i * width)/modulus.lengths.length, height);
-        context.lineTo((i * width)/modulus.lengths.length, height - ((modulus.lengths[i] * height)/max));
+        context.lineTo((i * width)/modulus.lengths.length, height
+            - ((modulus.lengths[i] * height)/max));
         context.closePath();
         context.stroke();
     }
@@ -80,7 +81,8 @@ function graphSlopes(){
     context.beginPath();
     context.moveTo(0, height);
     for(var i = 0; i < frequencies.length; i++){
-        context.lineTo((i * width)/frequencies.length, height - ((frequencies[i] * height)/max));
+        context.lineTo((i * width)/frequencies.length, height
+            - ((frequencies[i] * height)/max));
     }
     context.closePath();
     context.stroke();
