@@ -14,7 +14,8 @@
         "sections":[
             {"title": "Education",  "content": "text/resume/edu.txt"},
             {"title": "Languages",  "content": "text/resume/lang.txt"},
-            {"title": "Experience", "content": "text/resume/exp.txt"}
+            {"title": "Experience", "content": "text/resume/exp.txt"},
+            {"title": "Events", "content": "text/resume/evt.txt"}
         ]
     },
     "bio": {
