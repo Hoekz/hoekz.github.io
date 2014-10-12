@@ -3,12 +3,11 @@ var modulus = {
     lengths: [],
     count: 1,
     last: 0,
-    mod: 2,
-    display: document.getElementById("modulus")
+    mod: 2
 };
 var canvas = document.getElementById("canvas");
 var slopes = document.getElementById("slopes");
-modulus.display.innerHTML = "";
+
 for(modulus.mod = 2; modulus.mod < 2001; modulus.mod++){
     modulus.count = 1;
     modulus.last = 0;
@@ -20,28 +19,9 @@ for(modulus.mod = 2; modulus.mod < 2001; modulus.mod++){
         modulus.count %= modulus.mod;
     }
     modulus.lengths.push(modulus.length + 1);
-    if(modulus.mod < 502){
-        modulus.display.innerHTML +='<div class="hold" onclick="showSeries('+modulus.mod+')">'+
-            modulus.mod + ': ' + (modulus.length + 1) +
-            '</div>';
-    }
 }
 graph(1,1);
 graphSlopes();
-
-function showSeries(mod){
-    modulus.count = 1;
-    modulus.last = 0;
-    modulus.length = [];
-    while(!(modulus.count == 0 && modulus.last == 1)){
-        modulus.length.push(modulus.count);
-        modulus.count = (modulus.count + modulus.last);
-        modulus.last = (modulus.count - modulus.last) % mod;
-        modulus.count %= mod;
-    }
-    modulus.length.push(0);
-    document.getElementById("series").innerHTML = modulus.length.join(", ");
-}
 
 function graph(x, y){
     var context = canvas.getContext("2d");
@@ -123,16 +103,5 @@ canvas.addEventListener('mousemove', function(evt) {
 
 slopes.addEventListener('mousemove', function(evt) {
     var mousePos = getMousePos(slopes, evt);
-    var show = document.getElementById("xpos").innerHTML = "slope of " + (mousePos.x * 5 / slopes.width) + " with a tolerance of .005";
+    document.getElementById("xpos").innerHTML = "slope of " + (mousePos.x * 5 / slopes.width) + " with a tolerance of .005";
 }, false);
-
-function goTo(id, torf){
-    if(id == "series"){
-        document.getElementById(id).style.display = 'inline';
-        document.getElementById("modulus").style.display = 'inline';
-    }
-    document.getElementById(id).scrollIntoView(torf);
-}
-
-document.getElementById("series").style.display = 'none';
-document.getElementById("modulus").style.display = 'none';
