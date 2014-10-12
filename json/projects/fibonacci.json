@@ -1,0 +1,6 @@
+{
+    "name":"Fibonacci Series Mod Integers",
+    "description":"The Fibonacci series when modded by an integer, repeats itself eventually.  These graphs show the length of each pattern with respect to the integer.",
+    "src":"/text/fibo/main.html",
+    "files":["/text/fibo/fibonacci.js","/text/fibo/main.html","/text/fibo/looks.css"]
+}

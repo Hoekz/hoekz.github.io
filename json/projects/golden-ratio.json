@@ -1,5 +1,5 @@
 {
     "name":"The Golden Ratio in an Infinite Series",
     "description":"Similar to the geometric series, this series converges on values < 1 but  does something interesting with the golden ratio.",
-    "src":"/text/math.html"
+    "src":"/text/gr.html"
 }

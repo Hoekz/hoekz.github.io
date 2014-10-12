@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fibonacci</title>
+    <link rel="stylesheet" type="text/css" href="looks.css">
+</head>
+<body>
+<div id="series">Click on a number to see it's pattern</div>
+<div id="modulus"></div>
+<canvas id="canvas" height="300px" width="600px">Your Browser Does Not Support This Feature</canvas>
+<div id="slope">Scroll over the graph to highlight patterns by slope</div>
+<canvas id="slopes" height="300px" width="600px">Your Browser Does Not Support This Feature</canvas>
+<div id="xpos">Scroll over the graph to see the frequencies of certain slopes</div>
+<div id="attach">
+    <div class="btn" onclick="goTo('series', true)">Show Series</div>
+    <div class="btn" onclick="goTo('slope', false)">Go To Graph 1</div>
+    <div class="btn" onclick="goTo('xpos', false)">Go To Graph 2</div>
+</div>
+<script src="fibonacci.js"></script>
+</body>
+</html>

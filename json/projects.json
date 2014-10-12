@@ -6,16 +6,22 @@
         "link"  : "/project/python-table"
     },
     {
-        "title" : "Project Page",
-        "image" : "img/web.png",
-        "tease" : "This page's source code",
-        "link"  : "/project/page-source"
+        "title" : "Fibonacci",
+        "image" : "img/math.png",
+        "tease" : "Interesting observation",
+        "link"  : "/project/fibonacci"
     },
     {
         "title" : "Yahtzee",
         "image" : "img/python.jpg",
         "tease" : "Yahtzee game written in Python",
         "link"  : "/project/yahtzee"
+    },
+    {
+        "title" : "Project Page",
+        "image" : "img/web.png",
+        "tease" : "This page's source code",
+        "link"  : "/project/page-source"
     },
     {
         "title" : "Canvas 3D",
