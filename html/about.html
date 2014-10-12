@@ -4,9 +4,22 @@
         <a ng-repeat="acc in about.social.accounts" href="{{acc.link}}"><img src="{{acc.icon}}" class="icon"></a>
     </div><hr><br>
     <div class="mid fill">
+        <div class="left subtitle">{{about.resume.title}}</div>
+        <div class="accordion">
+            <ul>
+                <li ng-repeat="section in about.resume.sections">
+                    <input type="radio" id="radio-{{$index}}" name="radio-accordion" checked="checked" />
+                    <label for="radio-{{$index}}">{{section.title}}</label>
+                    <div class="content">
+                        <p ng-repeat="p in section.content">{{p}}</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div><hr><br>
+    <div class="mid fill">
         <div class="left subtitle">{{about.bio.title}} - {{about.bio.subtitle}}</div>
         <img src="{{about.bio.image}}" width="600px">
         <div class="left paragraph" ng-repeat="p in about.bio.content">{{p}}</div>
-    </div>
-    <hr><br>
+    </div><hr><br>
 </div>

@@ -20,10 +20,21 @@ app.factory('$fetch', ['$http', '$rootScope', function($http, $root){
         }else{
             $http.get('json/about.json').success(function(data){
                 self.about = data;
-                $http.get(self.about.bio.content).success(function(data){
-                    self.about.bio.content = data.split('\n');
-                    $root.$broadcast('about');
-                });
+                var last = function(){
+                    $http.get(self.about.bio.content).success(function(data){
+                        self.about.bio.content = data.split('\n');
+                        $root.$broadcast('about');
+                    });
+                };
+                var resume = function(i){
+                    i = i || 0;
+                    $http.get(self.about.resume.sections[i].content).success(function(data){
+                        self.about.resume.sections[i].content =  data;
+                        i++;
+                        (i == self.about.resume.sections.length ? last : resume)(i);
+                    });
+                };
+                resume();
             });
             return false;
         }

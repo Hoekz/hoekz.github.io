@@ -10,11 +10,11 @@
     },
     "resume": {
         "title": "James Hoekzema - Computer Scientist",
-        "sections":{
-            "Education" : "text/resume/edu.txt",
-            "Languages" : "text/resume/lang.txt",
-            "Experience" : "text/resume/exp.txt"
-        }
+        "sections":[
+            {"title": "Education",  "content": "text/resume/edu.txt"},
+            {"title": "Languages",  "content": "text/resume/lang.txt"},
+            {"title": "Experience", "content": "text/resume/exp.txt"}
+        ]
     },
     "bio": {
         "title": "Bio",
