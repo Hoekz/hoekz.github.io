@@ -1,1 +1,16 @@
-Education Content
+Currently studying at Missouri University of Science and Technology
+	GPA: 4.00
+	Major(s):
+		Computer Science
+		Computer Engineering
+	Graduation:
+		December 2016
+
+Graduated from Westminster Christian Academy	2013
+	GPA: 4.00
+	AP Credits:
+		US History, Statistic, Chemistry,
+		Calculus AB and BC, Physics B, Literature
+	Honors:
+		National Honors Society
+		Presidential List

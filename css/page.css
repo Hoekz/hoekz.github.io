@@ -234,5 +234,5 @@ ul li .content {
     border-top:0;
 }
 [type=radio]:checked ~ label ~ .content{
-    height:300px;
+    height:350px;
 }

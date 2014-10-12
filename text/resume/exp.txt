@@ -1,1 +1,4 @@
-Experience Content
+App Development: Used the Intel XDK to create my first app, a game, called Ringer.  Released on to App Store in both free and paid versions and updates maintained.
+Teacher: Organized and taught a summer camp at my old elementary school.  I taught 9 students MIT's Scratch programming language.  Received overwhelming positive feedback and am planning to expand to include a camp at my high school as well.
+Freelance: Working on freelancer.com as a web designer and graphic designer.  While I have not taken on many projects, I have received positive feedback from employers.
+Oasis Digital: Worked as an intern for the summer of 2013 using AngularJS to design web-based applications on two different teams.  One team worked for a digging ticket company for managers to observe employees.  The other team worked to design an interface to monitor inventory for an engineering company.
