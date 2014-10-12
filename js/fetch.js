@@ -29,7 +29,7 @@ app.factory('$fetch', ['$http', '$rootScope', function($http, $root){
                 var resume = function(i){
                     i = i || 0;
                     $http.get(self.about.resume.sections[i].content).success(function(data){
-                        self.about.resume.sections[i].content =  data;
+                        self.about.resume.sections[i].content =  data.split('\n');
                         i++;
                         (i == self.about.resume.sections.length ? last : resume)(i);
                     });
