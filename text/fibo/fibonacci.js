@@ -103,5 +103,6 @@ canvas.addEventListener('mousemove', function(evt) {
 
 slopes.addEventListener('mousemove', function(evt) {
     var mousePos = getMousePos(slopes, evt);
-    document.getElementById("xpos").innerHTML = "slope of " + (mousePos.x * 5 / slopes.width) + " with a tolerance of .005";
+    document.getElementById("xpos").innerHTML = "slope of " + (mousePos.x * 5 / slopes.width)
+        + " with a tolerance of .005";
 }, false);
