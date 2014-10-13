@@ -1,13 +1,13 @@
-Language	Experience		When
-Web	Javascript, HTML, CSS		2013-
-	AngularJS, HTML5 Canvas		Present
-	Example: this website
-C++	Classes: Basics, Data		2013-
-	Structures, Discrete Math	Present
-	Example: MegaMinerAI
-Python	Self-taught			2009-
-	Examples: Table, Yahtzee	Present
-LabVIEW	FIRST Robotics			2012-
-	Certification at MS&T		2014
-Java	Self-taught, Android		2010-
-	Example: Ray Tracer		2012
+Language  | Experience		           |    When
+Web       | Javascript, HTML, CSS      |    2013-
+	      | AngularJS, HTML5 Canvas    |    Present
+	      | Example: this website      |
+C++	      | Classes: Basics, Data      |    2013-
+	      | Structures, Discrete Math  |    Present
+	      | Example: MegaMinerAI       |
+Python    | Self-taught	               |    2009-
+	      | Examples: Table, Yahtzee   |    Present
+LabVIEW	  | FIRST Robotics	           |    2012-
+	      | Certification at MS&T	   |    2014
+Java	  | Self-taught, Android	   |    2010-
+	      | Example: Ray Tracer		   |    2012
