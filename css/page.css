@@ -215,7 +215,6 @@ a{
     background: white;
     border-radius: 3px;
     box-sizing: border-box;
-    tab-size: 8;
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
 }
@@ -223,6 +222,7 @@ a{
     color:#333;
     margin:5px;
     white-space: pre-wrap;
+    tab-size: 8;
 }
 
 ul li {
