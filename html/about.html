@@ -8,7 +8,7 @@
         <div class="accordion">
             <ul>
                 <li ng-repeat="section in about.resume.sections">
-                    <input type="radio" id="radio-{{$index}}" name="radio-accordion" checked="checked" />
+                    <input type="radio" id="radio-{{$index}}" name="radio-accordion"/>
                     <label for="radio-{{$index}}">{{section.title}}</label>
                     <div class="content">
                         <p ng-repeat="p in section.content" class="left paragraph">{{p}}</p>
