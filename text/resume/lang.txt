@@ -1,13 +1,10 @@
-Language    Experience                  When
-Web         Javascript, HTML, CSS       2013-
-            AngularJS, HTML5 Canvas     Present
-            Example: this website
-C++         Classes: Basics, Data       2013-
-            Structures, Discrete Math   Present
-            Example: MegaMinerAI
-Python      Self-taught                 2009-
-            Examples: Table, Yahtzee    Present
-LabVIEW     FIRST Robotics              2012-
-            Certification at MS&T       2014
-Java        Self-taught, Android        2010-
-            Example: Ray Tracer         2012
+Web: Worked heavily with Javascript, HTML, CSS, AngularJS, and the HTML5 Canvas.  Used in past internship, in several personal projects, for app in App Store, and for this website.
+    Approximately 1.5 years of experience.
+C++: School classes such as Basics (both in high school and college), Data Structures, and Discrete Math.  Used in MegaMinerAI and small personal projects.
+    Approximately 1 year of experience.
+Python: Self-taught early in high school and revisited in college.  Used for some personal projects such as a table class, basic Yahtzee game, and some graphics rendering.
+    Approximately 0.5 years of experience.
+LabVIEW: Self-taught in high school for FIRST Robotics and certified in college (CLAD).  Used for FIRST Robotics and basic calculation programs.
+    Approximately 2 years of experience.
+Java: Self-taught in high school, not used any since.  Used to create ray tracer and simple Android development.
+    Approximately 0.25 years of experience.
