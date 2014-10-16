@@ -22,6 +22,12 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, loc)
     loc.html5Mode(true);
 }]);
 
+app.filter("trust", ['$sce', function($sce){
+    return function(text){
+        return $sce.trustAsHtml(text);
+    };
+}]);
+
 var scrollSpeed = 0;
 var scroll = 0;
 document.addEventListener('keydown', function(e){
