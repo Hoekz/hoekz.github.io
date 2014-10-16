@@ -11,7 +11,7 @@
                     <input type="radio" id="radio-{{$index}}" name="radio-accordion"/>
                     <label for="radio-{{$index}}">{{section.title}}</label>
                     <div class="content">
-                        <p ng-repeat="p in section.content" class="left">{{p}}</p>
+                        <p ng-repeat="p in section.content" class="left" ng-bind-html-unsafe="p"></p>
                     </div>
                 </li>
             </ul>
