@@ -1,10 +1,5 @@
-<b>Web:</b><div> Worked heavily with Javascript, HTML, CSS, AngularJS, and the HTML5 Canvas.  Used in past internship, in several personal projects, for app in App Store, and for this website.</div>
-Approximately 1.5 years of experience.
-<b>C++:</b><div> School classes such as Basics (both in high school and college), Data Structures, and Discrete Math.  Used in MegaMinerAI and small personal projects.</div>
-Approximately 1 year of experience.
-<b>Python:</b><div> Self-taught early in high school and revisited in college.  Used for some personal projects such as a table class, basic Yahtzee game, and some graphics rendering.</div>
-Approximately 0.5 years of experience.
-<b>LabVIEW:</b><div> Self-taught in high school for FIRST Robotics and certified in college (CLAD).  Used for FIRST Robotics and basic calculation programs.</div>
-Approximately 2 years of experience.
-<b>Java:</b><div> Self-taught in high school, not used any since.  Used to create ray tracer and simple Android development.</div>
-Approximately 0.25 years of experience.
+<div><b>Web:</b> Worked heavily with Javascript, HTML, CSS, AngularJS, and the HTML5 Canvas.  Used in past internship, in several personal projects, for app in App Store, and for this website. Approximately 1.5 years of experience.</div>
+<div><b>C++:</b> School classes such as Basics (both in high school and college), Data Structures, and Discrete Math.  Used in MegaMinerAI and small personal projects. Approximately 1 year of experience.</div>
+<div><b>Python:</b> Self-taught early in high school and revisited in college.  Used for some personal projects such as a table class, basic Yahtzee game, and some graphics rendering. Approximately 0.5 years of experience.</div>
+<div><b>LabVIEW:</b> Self-taught in high school for FIRST Robotics and certified in college (CLAD).  Used for FIRST Robotics and basic calculation programs. Approximately 2 years of experience.</div>
+<div><b>Java:</b> Self-taught in high school, not used any since.  Used to create ray tracer and simple Android development. Approximately 0.25 years of experience.</div>
