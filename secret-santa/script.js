@@ -30,7 +30,7 @@ function loadFile() {
         const data = JSON.parse(e.target.result);
         save(data);
         renderInputs(data);
-        renderResult(data);
+        renderResult(data, 'pairs');
     };
 
     reader.readAsText(file);
