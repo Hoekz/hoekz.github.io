@@ -4,7 +4,8 @@ const create = (type) => document.createElement(type);
 const uploadBtn = get('upload');
 const addGroupBtn = get('add-group');
 const groups = get('groups');
-const generateBtn = get('generate');
+const generatePairsBtn = get('generate-pairs');
+const generateLoopBtn = get('generate-loop');
 const output = get('output');
 const exportBtn = get('export');
 
@@ -16,7 +17,7 @@ function load() {
     const stored = localStorage.getItem('data');
 
     if (!stored) {
-        return { groups: [], result: [] };
+        return { groups: [], result: [], mode: 'pairs' };
     }
 
     return JSON.parse(stored);
@@ -30,7 +31,7 @@ function loadFile() {
         const data = JSON.parse(e.target.result);
         save(data);
         renderInputs(data);
-        renderResult(data, 'pairs');
+        renderResult(data, data.mode ?? 'pairs');
     };
 
     reader.readAsText(file);
@@ -112,7 +113,7 @@ function renderResult(data, mode) {
                 return [person, data.result[index % 2 ? index - 1 : index + 1]];
             }
 
-            if (mode === 'cycle') {
+            if (mode === 'loop') {
                 return [person, data.result[index + 1] || data.result[0]];
             }
 
@@ -185,6 +186,8 @@ function removePerson(data, group) {
 
 function generate(mode) {
     const data = load();
+    data.mode = mode;
+    save(data);
 
     let result = secretSanta(data.groups);
     while (mode === 'pairs' && result.length % 2 && sameGroup(result[1], result[result.length - 1], data.groups)) {
@@ -276,9 +279,13 @@ function run() {
 
     uploadBtn.addEventListener('change', loadFile);
     addGroupBtn.addEventListener('click', addGroup);
-    generateBtn.addEventListener('click', (e) => {
+    generatePairsBtn.addEventListener('click', (e) => {
         e.preventDefault();
         generate('pairs');
+    });
+    generateLoopBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        generate('loop');
     });
     exportBtn.addEventListener('click', exportFile);
 }
